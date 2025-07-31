@@ -1,0 +1,15 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+# Ignore compiled class files
+*.class
+
+# IntelliJ IDEA files
+.idea/
+*.iml
+
+# Output directory
+out/
+
+# VSCode settings
+.vscode/
