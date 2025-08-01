@@ -5,6 +5,7 @@ public class ObjectsAndClasses1 {
 //        s1.name = "kp";
 //        s1.marks = 45.67f;
 
+        // calls the method with 3 args i.e. Student(int rno, String name, float marks)
         Student s1 = new Student(15,"kartik",56.78f);
         s1.greeting();
         System.out.println(s1.name);
@@ -13,11 +14,17 @@ public class ObjectsAndClasses1 {
         System.out.println(s1.name);
         System.out.println(s1.marks);
 
-        //calls the empty Student()
+        // calls the empty Student()  i.e.  the default one
         Student s2 = new Student();
         System.out.println(s2.rno);
         System.out.println(s2.name);
         System.out.println(s2.marks);
+
+        // calls the Student(Student other) i.e. calling by passing an object as an argument
+        Student s3 = new Student(s1);
+        System.out.println(s3.rno);
+        System.out.println(s3.name);
+        System.out.println(s3.marks);
 
 
 
@@ -45,6 +52,7 @@ class Student {
     }
 
 
+    // gets called when i pass another object as an argument
     Student  (Student other) {
         this.name = other.name;
         this.rno = other.rno;
