@@ -7,6 +7,8 @@ public class ObjectsAndClasses1 {
         s1.marks = 45.67f;
 
         s1.greeting();
+        System.out.println(s1.name);
+        s1.changeName("padal");
         System.out.println(s1.rno);
         System.out.println(s1.name);
         System.out.println(s1.marks);
@@ -27,5 +29,9 @@ class Student {
 
     void greeting(){
         System.out.println("hi "+this.name+" here!");
+    }
+
+    void changeName(String naam){
+        this.name = naam;
     }
 }
