@@ -5,18 +5,16 @@ public class Human {
     String name;
     int salary;
     boolean married;
-    static long population;
+    static long population; // this variable is not dependent on any object
 
-    static void message() {
-        System.out.println("Hello world");
-//        System.out.println(this.age); // cant use this over here
-    }
+
 
     public Human(int age, String name, int salary, boolean married) {
         this.age = age;
         this.name = name;
         this.salary = salary;
         this.married = married;
-        Human.population += 1;
+        Human.population += 1;  // whenever an object of Human gets created i.e. a Human borns,
+                                // the population goes up by 1
     }
 }
