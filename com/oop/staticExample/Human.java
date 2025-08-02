@@ -14,7 +14,8 @@ public class Human {
         this.name = name;
         this.salary = salary;
         this.married = married;
+        // this.population += 1;   // prints just always 1 for every object created
         Human.population += 1;  // whenever an object of Human gets created i.e. a Human borns,
-                                // the population goes up by 1
+        // the population goes up by 1
     }
 }
