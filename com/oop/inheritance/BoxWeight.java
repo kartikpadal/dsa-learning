@@ -1,7 +1,11 @@
 package com.oop.inheritance;
 
 public class BoxWeight extends Box{
-    public static void main(String[] args) {
+
         double weight;
+
+    BoxWeight(double h, double l , double w, double weight) {
+        super(h, l, w);
+        this.weight = weight;
     }
 }
