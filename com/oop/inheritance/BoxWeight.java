@@ -6,6 +6,12 @@ public class BoxWeight extends Box{
 
     BoxWeight(double h, double l , double w, double weight) {
         super(h, l, w);
-        this.weight = weight;
+        super.weight = weight;  // use super if superclass also has weight variable &
+                                // you want to use weight from superclass
+
+
+        this.weight = weight;  // use 'this' if want to access weight from subclass
     }
+
+
 }
