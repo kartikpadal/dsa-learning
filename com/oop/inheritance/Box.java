@@ -15,4 +15,10 @@ public class Box {
         this.l = l;
         this.w = w;
     }
+
+    Box(Box old){
+        this.h = old.h;
+        this.l = old.l;
+        this.w = old.w;
+    }
 }
