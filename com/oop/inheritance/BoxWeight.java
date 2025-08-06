@@ -21,4 +21,8 @@ public class BoxWeight extends Box{
         this.weight = weight;  // use 'this' if want to access weight from subclass
     }
 
+    BoxWeight(double side, double weight){
+        super(side);
+        this.weight = weight;
+    }
 }

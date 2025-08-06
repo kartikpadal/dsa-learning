@@ -21,4 +21,10 @@ public class Box {
         this.l = old.l;
         this.w = old.w;
     }
+
+    Box(double side){
+        this.h = side;
+        this.l= side;
+        this.w = side;
+    }
 }
