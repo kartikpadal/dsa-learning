@@ -12,8 +12,14 @@ public class Main {
         System.out.println(b.h+", "+b.l+", "+b.w); // allowed
         // System.out.println(b.weight);  error: can only access Box members
 
+        // what if: box & boxWeight both have weight variable ?
+        // then:-  use 'super.weight = weight;' inside boxWeight() constructor
+        BoxWeight b3 = new BoxWeight(15,14,15,19);
+        System.out.println(b3.h+", "+b3.l+", "+b3.w+", "+b3.weight);   // here weight=19 for subclass
 
-
+        // for Box class
+        Box b4 = new BoxWeight(15,14,15,20);
+        System.out.println(b4.h+", "+b4.l+", "+b4.w+", "+b4.weight);   // here weight=20 for superclass
 
     }
 }
