@@ -4,6 +4,7 @@ public class Box {
     double h,l,w;
 
     Box(){
+        super(); // this calls the object class "the baap of all classes";
         this.h = -1;
         this.l = -1;
         this.w = -1;
