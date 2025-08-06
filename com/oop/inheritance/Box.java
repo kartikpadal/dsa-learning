@@ -1,7 +1,8 @@
 package com.oop.inheritance;
 
 public class Box {
-    double h,l,w;
+    double h,l,w,weight;
+
 
     Box(){
         super(); // this calls the object class "the baap of all classes";
