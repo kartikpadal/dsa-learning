@@ -21,6 +21,7 @@ public class Main {
         Box b4 = new BoxWeight(15,14,15,20);
         System.out.println(b4.h+", "+b4.l+", "+b4.w+", "+b4.weight);   // here weight=20 for superclass
 
+        // multilevel inheritance
         BoxPrice b5 = new BoxPrice(5,50,100);
         System.out.println(b5.l+", "+b5.weight+", "+b5.cost);
     }
