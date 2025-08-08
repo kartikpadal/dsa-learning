@@ -29,6 +29,12 @@ public class Main {
         c2.area();  // obj is of Circle(); So, overrides all methods and calls area() in Circle
         t.area();   // obj is of Triangle(); So, overrides all methods and calls area() in Triangle
         sq.area();  // obj is of Square(); So, overrides all methods and calls area() in Square
+
+        Square sq2 = new Square();
+       // sq.hello();  // calls hello() from Shapes cuz it is static
+        Square.hello();  // correct way of writing
+
+        // you can inherit static methods but cant override them !!!
     }
 
 }
