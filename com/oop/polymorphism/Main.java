@@ -16,6 +16,7 @@ public class Main {
         // HOW java determines OVERRIDING? --> via " DYNAMIC DISPATCH METHOD "
 
 
+        // Parent obj = new Child();  // this is called Upcasting btw
         Shapes s = new Shapes();
         Shapes c = new Circle();   // can initialize subclass object using superclass reference
         Circle c2 = new Circle();   // can obviously initialize subclass obj using superclass reference
