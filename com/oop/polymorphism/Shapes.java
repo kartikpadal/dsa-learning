@@ -7,7 +7,7 @@ public class Shapes {
         }
 
 //      Early binding: check notes
-//    final void area() {
+//    final void area() {      // final : cant override this method
 //        System.out.println("I am in shapes");
 //    }
     }
