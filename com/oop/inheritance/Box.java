@@ -9,6 +9,7 @@ public class Box {
         this.h = -1;
         this.l = -1;
         this.w = -1;
+        this.weight = -1;
     }
     Box(double h, double l, double w){
         this.h = h;

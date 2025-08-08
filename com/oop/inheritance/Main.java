@@ -24,5 +24,8 @@ public class Main {
         // multilevel inheritance
         BoxPrice b5 = new BoxPrice(5,50,100);
         System.out.println(b5.l+", "+b5.weight+", "+b5.cost);
+
+        BoxColor b6 = new BoxColor();    // hierarchical inheritance
+        System.out.println(b6.l+", "+b6.weight+", "+b6.color);
     }
 }
