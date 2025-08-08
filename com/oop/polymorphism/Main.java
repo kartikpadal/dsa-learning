@@ -12,7 +12,10 @@ public class Main {
 //        System.out.println(m.sum(6.0,7.0));
 //        System.out.println(m.sum("kp", 5));
 
-        // overriding
+        // overriding :
+        // HOW java determines OVERRIDING? --> via " DYNAMIC DISPATCH METHOD "
+
+
         Shapes s = new Shapes();
         Shapes c = new Circle();   // can initialize subclass object using superclass reference
         Circle c2 = new Circle();   // can obviously initialize subclass obj using superclass reference
