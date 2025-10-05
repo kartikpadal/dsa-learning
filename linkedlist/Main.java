@@ -24,15 +24,26 @@ public class Main {
 
 
         //for Doubly LL:
-        DLL list = new DLL();
+//        DLL list = new DLL();
+//
+//        list.insertFirst(3);
+//        list.insertFirst(4);
+//        list.insertFirst(5);
+//        list.insertFirst(6);
+//        list.insertFirst(7);
+//        list.insertLast(8);
+//        list.insertAfter(6,10);
+//        list.display();
 
-        list.insertFirst(3);
-        list.insertFirst(4);
-        list.insertFirst(5);
-        list.insertFirst(6);
-        list.insertFirst(7);
-        list.insertLast(8);
-        list.insertAfter(6,10);
+
+        //for Circular LL:
+        CLL list = new CLL();
+        list.insert(3);
+        list.insert(4);
+        list.insert(5);
+        list.insert(6);
+        list.insert(7);
+        list.delete(5);
         list.display();
     }
 }
