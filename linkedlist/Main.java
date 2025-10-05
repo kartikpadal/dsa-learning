@@ -19,6 +19,7 @@ public class Main {
         list.display();
         System.out.println(list.delete(3));
         list.display();
+        System.out.println(list.find(5));
     }
 }
 

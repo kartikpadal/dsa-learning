@@ -62,7 +62,18 @@ public class LL {
         return val;
     }
 
-    //delete last node
+    public Node find(int val){
+        Node node = head;
+        while(node != null){
+            if(node.value == val){
+                return node;
+            }
+            node = node.next;
+        }
+
+        return null;
+    }
+
     public Node get(int index){
         Node node = head;
         for(int i=0; i<index; i++){
@@ -71,6 +82,7 @@ public class LL {
         return node;
     }
 
+    //node deletion
     public int deleteLast(){
         if(size <= 1){
             return deleteFirst();
