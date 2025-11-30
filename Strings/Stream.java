@@ -4,17 +4,33 @@ package Strings;
 
 public class Stream {
     public static void main(String[] args){
-        System.out.println(skipBatman("abbatmanccad"));
+        System.out.println(skipBatman("abatbatmanccad"));
     }
 
 
+    //skips the word 'batman'
     static String skipBatman(String up){
         if(up.isEmpty()){
             return "";
         }
 
-        if(up.startsWith("batman")){
+        if(up.startsWith("batman") ){
             return skipBatman(up.substring(6));
+        }
+        else{
+            return up.charAt(0) + skipBatman(up.substring(1));
+        }
+    }
+
+
+    //skips the word 'bat' and not batman
+    static String skipBat(String up){
+        if(up.isEmpty()){
+            return "";
+        }
+
+        if(up.startsWith("bat") && (!up.startsWith("batman"))){
+            return skipBatman(up.substring(3));
         }
         else{
             return up.charAt(0) + skipBatman(up.substring(1));
