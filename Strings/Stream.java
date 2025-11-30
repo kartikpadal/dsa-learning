@@ -1,4 +1,6 @@
 package Strings;
+//make a string without a's
+
 
 public class Stream {
     public static void main(String[] args){
