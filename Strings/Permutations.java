@@ -27,7 +27,7 @@ public class Permutations {
     }
 
 
-    // arraylist permutations
+    // returns arraylist permutations
     static ArrayList<String> permutationsList(String p, String up){
         if(up.isEmpty()){
             ArrayList<String> list = new ArrayList<>();
