@@ -1,10 +1,14 @@
 package Strings;
 
+import java.util.ArrayList;
+
 public class DiceCombinations {
     public static void main(String[] args) {
-        dice("",4);
+        //dice("",4);
+        System.out.println(diceList("",4));
     }
 
+    // normal returning as strings
     static void dice(String p, int target){
         if(target == 0){
             System.out.println(p);
@@ -14,5 +18,20 @@ public class DiceCombinations {
         for(int i=1; i<=6 && i<=target; i++){
             dice(p+i, target - i);
         }
+    }
+
+    // returning in a list
+    static ArrayList<String> diceList(String p, int target){
+        if(target == 0){
+            ArrayList<String> list = new ArrayList<>();
+            list.add(p);
+            return list;
+        }
+        ArrayList<String> ans = new ArrayList<>();
+
+        for(int i=1; i<=6 && i<=target; i++){
+            ans.addAll(diceList(p+i, target - i));
+        }
+        return ans;
     }
 }
