@@ -37,6 +37,8 @@ public class Maze {
         }
     }
 
+
+    // Print the paths in an ArrayList (top left to bottom right: can only go right & down)
     static ArrayList<String> pathList(String p, int r, int c){
         if(r==1 && c==1){
             ArrayList<String> list = new ArrayList<>();
