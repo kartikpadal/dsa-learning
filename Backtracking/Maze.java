@@ -7,7 +7,8 @@ public class Maze {
 
         //System.out.println(count(3,3));
         //path("",3,3);
-        System.out.println(pathList("",3,3));
+        //System.out.println(pathList("",3,3));
+        System.out.println(pathListDiagonal("",3,3));
     }
 
 
@@ -53,6 +54,31 @@ public class Maze {
         }
         if(c>1){
             ans.addAll(pathList(p+'R', r, c-1));
+        }
+
+        return ans;
+    }
+
+
+    // here diagonal is also allowed
+    static ArrayList<String> pathListDiagonal(String p, int r, int c){
+        if(r==1 && c==1){
+            ArrayList<String> list = new ArrayList<>();
+            list.add(p);
+            return list;
+        }
+
+        ArrayList<String> ans = new ArrayList<>();
+
+        if(r>1 && c>1){
+            ans.addAll(pathListDiagonal(p+"DG", r-1, c-1));
+        }
+
+        if(r>1){
+            ans.addAll(pathListDiagonal(p+'D', r-1, c));
+        }
+        if(c>1){
+            ans.addAll(pathListDiagonal(p+'R', r, c-1));
         }
 
         return ans;
