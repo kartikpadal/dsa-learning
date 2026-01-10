@@ -2,13 +2,15 @@ package Backtracking;
 
 import java.util.ArrayList;
 
+//in this problem, the matrix is top left (3,3) to bottom right (1,1)
+
 public class Maze {
     public static void main(String[] args){
 
         //System.out.println(count(3,3));
         //path("",3,3);
         //System.out.println(pathList("",3,3));
-        System.out.println(pathListDiagonal("",3,3));
+        System.out.println(count(3,3));
     }
 
 
