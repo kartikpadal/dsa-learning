@@ -12,7 +12,7 @@ public class AllPaths {
     }
 
 
-    // printing all possible paths w/o any blocks:
+    // printing all possible paths (i.e. can move in all 4 directions) w/o any blocks :
     static void allPath(String p, boolean[][] maze, int r, int c) {
         if (r == maze.length - 1 && c == maze[0].length - 1) {
             System.out.println(p);
