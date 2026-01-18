@@ -75,6 +75,9 @@ public class AllPaths {
             allPathPrint(p + 'L', maze, r, c-1, path, step+1);
         }
 
+
+        // this line is where the function will be over
+        // so before the function gets removed, also remove the changes that were made by that function
         maze[r][c] = true;
         path[r][c] = 0;
     }
