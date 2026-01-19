@@ -70,7 +70,7 @@ public class AllPaths {
             return;
         }
 
-        // i am considering this block in my path
+        // we're considering this block in my path:
         maze[r][c] = false;
         path[r][c] = step;
         if (r < maze.length - 1) {
