@@ -9,6 +9,7 @@ public class NQueens {
     }
 
 
+    // N queens :
     static int queens(boolean[][] board, int row) {
         if(row == board.length) {
             display(board);
