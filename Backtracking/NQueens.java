@@ -8,10 +8,11 @@ public class NQueens {
         queens(board, 0);
     }
 
+
     static int queens(boolean[][] board, int row) {
         if(row == board.length) {
             display(board);
-
+            System.out.println();
             return 1;
         }
 
