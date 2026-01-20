@@ -5,7 +5,7 @@ public class NQueens {
     public static void main(String[] args){
         int n=4;
         boolean[][] board = new boolean[n][n];
-        queens(board, 0);
+        System.out.println(queens(board, 0));
     }
 
 
@@ -62,10 +62,10 @@ public class NQueens {
         for(boolean[] row : board){
             for(boolean el : row){
                 if(el){
-                    System.out.println("Q ");
+                    System.out.print("Q ");
                 }
                 else{
-                    System.out.println("X ");
+                    System.out.print("X ");
                 }
             }
             System.out.println();
