@@ -1,7 +1,26 @@
 
 import java.util.*;
 
+// given:
+//
+//An integer array arr of length n
+//
+//Indices are 0-based
+//
+//You must find the maximum value of j - k such that:
+//
+//arr[j] ≥ arr[k]  and  j > k
+//
+//
+//If no such pair exists, print -1.
 
+//Example (from your screenshot)
+//Input
+//n = 5
+//arr = [30, 2, 27, 22, 3]
+//
+//Output
+//3
 
 public class CapgeminiQ2 {
         public static void main(String[] args) {
