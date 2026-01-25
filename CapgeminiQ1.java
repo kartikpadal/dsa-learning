@@ -1,5 +1,18 @@
 import java.util.*;
 
+//given:
+//
+//A string S of length N
+//An integer K
+
+//output:
+
+//Find the first substring of length K such that
+//no two adjacent characters are the same
+//
+//Print the 0-based starting index of that substring
+//
+//If no such substring exists, print -1
 
 
 
