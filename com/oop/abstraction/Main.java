@@ -11,5 +11,12 @@ public class Main {
         d.career();
         d.partner();
         d.bird();
+
+        // You can't create objects of an abstract class.
+        //Parent mon = new Parent(23);
+
+        Parent mom = new Son(23);
+        System.out.println(mom.age);
+
     }
 }
