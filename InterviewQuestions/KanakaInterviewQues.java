@@ -1,10 +1,11 @@
+package InterviewQuestions;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import java.util.Scanner;
 
 // my brute force way
-//public class KanakaInterviewQues {
+//public class InterviewQuestions.KanakaInterviewQues {
 //
 //        public List<List<Integer>> palindromePairs(String[] words) {
 //            List<List<Integer>> list = new ArrayList<>();

@@ -1,3 +1,5 @@
+package InterviewQuestions;
+
 public class EndavaQues {
     public static void main(String[] args) {
         System.out.println(funct("1234567", 3));
