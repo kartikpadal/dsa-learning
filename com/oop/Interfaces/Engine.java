@@ -1,7 +1,8 @@
 package com.oop.Interfaces;
 
 public interface Engine {
-    int PRICE = 45000;
+    // variables here are public final static by DEFAULT:
+    final static int PRICE = 45000;
 
     void start();
     void acc();
