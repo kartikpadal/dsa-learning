@@ -62,7 +62,7 @@ public class EndavaInterviewQues {
 //
 //public int totalTails() {
 //    int resultTails = 0;
-//    for (InterviewQuestions.Animal animal : animals) {
+//    for (Animal animal : animals) {
 //        if (animal instanceof InterviewQuestions.Dog) {
 //            resultTails += ((InterviewQuestions.Dog) animal).tail;
 //        } else if (animal instanceof InterviewQuestions.Cat) {
