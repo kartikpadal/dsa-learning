@@ -53,20 +53,20 @@ public class EndavaInterviewQues {
 
 //The problem is:
 
-//Your ArrayList<InterviewQuestions.Animal> holds InterviewQuestions.Animal references, so you can only call methods or access
-// fields declared in InterviewQuestions.Animal.
+//Your ArrayList<Animal> holds Animal references, so you can only call methods or access
+// fields declared in Animal.
 
-//tail exists only in InterviewQuestions.Dog and InterviewQuestions.Cat, not in InterviewQuestions.Animal, so you can’t directly do animal.tail.
+//tail exists only in Dog and Cat, not in Animal, so you can’t directly do animal.tail.
 
 //So the only way to get tails is by downcasting inside the loop and checking the actual type:
 //
 //public int totalTails() {
 //    int resultTails = 0;
 //    for (Animal animal : animals) {
-//        if (animal instanceof InterviewQuestions.Dog) {
-//            resultTails += ((InterviewQuestions.Dog) animal).tail;
-//        } else if (animal instanceof InterviewQuestions.Cat) {
-//            resultTails += ((InterviewQuestions.Cat) animal).tail;
+//        if (animal instanceof Dog) {
+//            resultTails += ((Dog) animal).tail;
+//        } else if (animal instanceof Cat) {
+//            resultTails += ((Cat) animal).tail;
 //        }
 //    }
 //    return resultTails;
